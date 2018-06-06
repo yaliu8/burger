@@ -4,13 +4,13 @@
 Eat-Da-Burger App is an app that lets users input the names of burgers they'd like to eat by filling out a form and pressing a Submit buton. When the user submits the burger name, the app will display the burger on the left side of the page under a "Burgers available to eat" section. The burgers are then allowed to be devoured. The user can devour it by clicking the "Devour" button, upon which that devoured burger will show up on the right side of the page under a "Burgers Devoured" section.
 
 ## Dependencies
-* MySQL
 * HTML
+* CSS
+* MySQL
 * Javascript
 * Node
 * Express
 * Handlebars
-* ORM
 
 ## Getting Started - To install the application follow the instructions below:
 
