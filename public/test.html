@@ -1,0 +1,74 @@
+<!-- Static File -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Eat-Da-Burger">
+    <link rel="icon" href="assets/img/burgericon.png">
+    <title>Eat-Da-Burger</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/burger_style.css" rel="stylesheet">
+  </head>
+
+  <body>
+      <div>
+        <div class="container bg">
+
+          <!-- Header -->
+            <div class="row">
+                <div class="center col-sm-12">
+                <img src="assets/img/burger.png" alt="Eat-Da-Burger!">
+                    <h1>Eat-Da-Burger!</h1>
+                    <p></p>
+                </div>
+              </div>
+          
+          <!-- Burgers Available To Eat -->
+            <div class="row">
+                <div class="col-sm-6">
+                <br>
+                <h2>Burgers Available To Eat!</h2>
+                        <form action="/{{this.id}}?_method=PUT" method="POST">
+                          <input type="hidden" name="devoured" value="true">
+                          <button class="btn-primary" type="submit">Devour It!</button>
+                        </form>
+                </div>
+          
+          <!-- Burgers Eaten -->
+                <div class="col-sm-6">
+                <h2>Burgers Devoured!</h2>
+                </div>
+              </div>
+          
+          <!-- Add a Burger -->
+            <div class="row">
+                <div class="center col-sm-12">
+                <h2>Add A Burger!</h2>
+                <form class="create-update-form" action="/" method="POST">
+          
+                  <div class="form-group">
+                    <p>Enter a burger you want to eat and click the Submit button.</p>
+                    <input type="text" id="ca" name="burger_name">
+                  </div>
+              
+              <!-- Submit Button -->
+                  <button class="btn-primary" type="submit">Submit</button>
+                </form>
+                </div>
+              </div>
+          </div>
+        </div>
+      
+      <hr>
+      
+      <footer class=" center footer">
+        <div class="container">
+          <p> copyright © Alice Guillaume 2018</p>
+        </div>
+      </footer>
+  </body>
+
+</html>
